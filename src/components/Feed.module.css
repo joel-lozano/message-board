@@ -1,0 +1,8 @@
+.feed {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    max-width: 30rem;
+    padding: 0;
+}

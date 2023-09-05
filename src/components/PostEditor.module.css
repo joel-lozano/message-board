@@ -1,0 +1,101 @@
+.new-post-input {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background: #040404;
+    position: relative;
+    min-width: 25rem;
+}
+
+.new-post-input textarea {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    background: transparent;
+    resize: none;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    margin: 0;
+    height: 4rem;
+    margin-bottom: 3rem;
+}
+
+.author {
+    border-bottom: 1px solid gray;
+    padding-left: 1rem;
+    gap: 0.5rem;
+    display: flex;
+    place-items: center;
+}
+
+.author img {
+    flex: 0;
+    object-fit: cover;
+    max-width: 3rem;
+    max-height: 3rem;
+    border-radius: 50%;
+}
+
+.author h2 {
+    flex: 8;
+}
+
+.new-post-input button {
+    border: none;
+    cursor: pointer;
+    font-weight: 1000;
+    padding: 0.5rem 0.9rem;
+    border-radius: 30px;
+    color: rgba(245, 245, 245, 0.9);
+    margin-bottom: 0.5rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.new-post-input button:disabled {
+    cursor: default;
+    color: rgba(245, 245, 245, 0.4);
+}
+
+.draft-button, .cancel-button {
+    background-color: #808080;
+}
+
+.draft-button:hover, .cancel-button:hover {
+    background-color: #606060;
+}
+
+.draft-button:active, .cancel-button:active {
+    background: #404040;
+}
+
+.draft-button {
+    margin-right: 5rem;
+}
+
+.draft-button:disabled {
+    background-color: #404040;
+}
+
+.cancel-button {
+    margin-right: 14rem;
+}
+
+.post-button {
+    margin-right: 0.5rem;
+    background: #45caff90;
+}
+
+.post-button:hover {
+    background: #45caff70;
+}
+
+.post-button:active {
+    background: #45caff50;
+}
+
+.post-button:disabled {
+    background: #45caff40;
+}
