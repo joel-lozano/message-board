@@ -31,7 +31,7 @@ const Home = () => {
             <main className={styles.main}>
                 <div className={styles.feed}>
                     {session?.user && <PostEditor />}
-                    <Feed posts={posts.reverse()} />
+                    <Feed posts={(posts as IPost[]).reverse()} />
                 </div>
             </main>
         </Layout>
