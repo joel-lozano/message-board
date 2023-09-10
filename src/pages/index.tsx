@@ -29,10 +29,8 @@ const Home = () => {
     return (
         <Layout>
             <main className={styles.main}>
-                <div className={styles.feed}>
-                    {session?.user && <PostEditor />}
-                    <Feed posts={(posts as IPost[]).reverse()} />
-                </div>
+                {session?.user ? <PostEditor /> : <h1>Log in to start posting.</h1>}
+                <Feed posts={posts.reverse()} />
             </main>
         </Layout>
     )

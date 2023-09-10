@@ -78,7 +78,7 @@ const PostEditor = ({ id, initialContent, closeModal }: PostEditorProps) => {
         <div className={styles['new-post-input']}>
             <ToastContainer />
             <span className={styles.author}>
-                <img src={user.image ? user.image : '/default-profile.png'} />
+                <img src={user.image ? user.image : '/default-profile.png'} alt='Profile Picture' />
                 <h2>{user.name}</h2>
             </span>
             <textarea

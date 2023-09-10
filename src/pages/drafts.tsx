@@ -50,7 +50,7 @@ const Drafts = ({ drafts }: DraftsPageProps) => {
         <Layout>
             <main>
                 <h1>My Drafts</h1>
-                <Feed posts={(drafts as IPost[]).reverse()} />
+                <Feed posts={drafts.reverse()} />
             </main>
         </Layout>
     );

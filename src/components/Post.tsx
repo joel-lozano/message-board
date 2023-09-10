@@ -1,13 +1,14 @@
 import { useState } from 'react';
+
 import { useSession } from 'next-auth/react';
+import { useRouter } from 'next/router';
 
 import Modal from '@/components/Modal';
-import { IPost } from '@/types/common';
+import PostEditor from '@/components/PostEditor';
 import parseTimestamp from '@/utils/parseTimestamp';
+import { IPost } from '@/types/common';
 
 import styles from './Post.module.css';
-import PostEditor from './PostEditor';
-import { useRouter } from 'next/router';
 
 interface PostProps {
     post: IPost;
@@ -45,7 +46,7 @@ const Post = ({ post }: PostProps) => {
     }
 
     return (
-        <li className={styles.post} key={post.id}>
+        <div className={styles.post}>
             <Modal
                 isOpen={editModalOpen}
                 setOpen={setEditModalOpen}
@@ -90,7 +91,7 @@ const Post = ({ post }: PostProps) => {
                     </span>
                 </>
             )}
-        </li>
+        </div>
     );
 }
 
