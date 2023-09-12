@@ -19,6 +19,7 @@ export const authOptions = {
             clientSecret: process.env.GITHUB_SECRET || 'Error: No GITHUB_SECRET',
         }),
     ],
+    prompt: 'select_account',
     adapter: PrismaAdapter(prisma),
     secret: process.env.SECRET,
 };
