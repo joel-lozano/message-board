@@ -1,0 +1,119 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: rgba(245, 245, 245, 0.9);
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    max-width: 25rem;
+    width: 70%;
+    padding: 0;
+    gap: 2rem;
+}
+
+.post {
+    background: #141414;
+    padding: 1rem;
+    border-radius: 10px;
+    overflow-wrap: break-word;
+}
+
+.post .header {
+    display: flex;
+    align-content: space-between;
+}
+
+.post .header .top-left {
+    flex: 5;
+    display: flex;
+    align-items: center;
+}
+
+.post .header .material-symbols-outlined {
+    flex: 0;
+}
+
+.post .header .top-left .profile-picture {
+    flex: 1;
+    margin-right: 0.5rem;
+}
+
+.post .header .top-left .profile-picture img {
+    height: 100%;
+    width: 100%;
+}
+
+.post .header .top-left .text {
+    flex: 8;
+}
+
+.post .header .top-left .title {
+    margin: 0;
+}
+
+.post .header .top-left .username {
+    margin: 0;
+    color: gray;
+}
+
+.post .material-symbols-outlined {
+    flex: 1;
+    cursor: pointer;
+    border-radius: 5px;
+    height: fit-content;
+}    
+
+.post .material-symbols-outlined:hover {
+    background: #343434;
+}
+
+.post .material-symbols-outlined:active {
+    background: #242424;
+}
+
+.post .header .material-symbols-outlined {
+    font-size: 2rem;
+    color: #cd7121;
+}
+
+.post .content {
+    font-size: 1.2rem;
+    margin: 0.6rem 0 0 0;
+}
+
+.post .timestamp {
+    font-size: 0.8rem;
+    color: gray;
+    margin: 0;
+}
+
+.post .extras {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.post .extras .material-symbols-outlined {
+    color: #45caff;
+    font-size: 2rem;
+    flex: 0;
+}
+
+.credits {
+    font-size: 0.8rem;
+    position: static;
+    bottom: 0;
+}
+
+.credits a {
+    color: gray;
+}

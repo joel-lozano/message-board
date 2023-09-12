@@ -1,0 +1,50 @@
+.login-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #242424;
+    border-radius: 5px;
+    width: 20rem;
+    height: 60%;
+    color: #45caff;
+}
+
+form h1 {
+    margin-bottom: 0.5rem;
+}
+
+form a {
+    color: #0088ff;
+}
+
+.input {
+    max-width: 40%;
+}
+
+input[type='text'], input[type='password'] {
+    margin: 0.4rem 0 1rem 0;
+    width: 96%;
+    background-color: #323232;
+    outline-color: gainsboro;
+    caret-color: gainsboro;
+    color: gainsboro;
+}
+
+input[type='submit'] {
+    background: linear-gradient(to bottom, #45caff, #0077de);
+    margin-top: 0.6rem;
+    border-radius: 30px;
+    padding: 0.5rem 0;
+    cursor: pointer;
+    border: none;
+    width: 27%;
+    color: gainsboro;
+}

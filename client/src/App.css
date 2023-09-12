@@ -1,0 +1,25 @@
+:root {
+    /* Light theme */
+    --light-bg: white;
+    --light-fg: #000;
+    --light-border: black;
+
+    /* Dark theme */
+    --dark-bg: #1a1b1c;
+    --dark-fg: white;
+    --dark-border: gray;
+    
+    /* Defaults */
+    --current-bg: var(--dark-bg);
+    --current-fg: var(--dark-fg);
+    --current-border: var(--dark-border);
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    user-select: none;
+    background-color: var(--current-bg);
+    color: var(--current-fg);
+    height: 100vh;
+    margin: 0;
+}
